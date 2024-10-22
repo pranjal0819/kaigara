@@ -82,6 +82,8 @@ func BuildCmdEnv(appNames []string, ss types.Storage, currentEnv, scopes []strin
 					}
 				}
 
+				log.Printf("INF: config key: %s, %s\n", k, val)
+
 				m := kfile.FindStringSubmatch(k)
 
 				if m == nil {
